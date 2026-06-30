@@ -1,8 +1,10 @@
 const Order = require("../models/Order");
 
 const createOrder = async (req, res) => {
+  console.log("ORDER API HIT");
   try {
     const order = await Order.create(req.body);
+    
 
     res.status(201).json(order);
   } catch (error) {
