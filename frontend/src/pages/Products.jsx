@@ -9,7 +9,7 @@ function Products({ cart, setCart }) {
 
   useEffect(() => {
     axios
-      .get("http://localhost:5000/products")
+      .get("https://smartcart-backend-ukyl.onrender.com/products")
       .then((res) => {
         setProducts(res.data);
       })

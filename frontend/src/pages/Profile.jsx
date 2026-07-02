@@ -12,7 +12,7 @@ function Profile() {
   const fetchOrders = async (email) => {
     try {
       const res = await axios.get(
-        "http://localhost:5000/api/orders"
+        "https://smartcart-backend-ukyl.onrender.com/api/orders"
       );
 
       const userOrders = res.data.filter(
@@ -59,7 +59,7 @@ function Profile() {
 
   try {
     await axios.put(
-      "http://localhost:5000/api/auth/change-password",
+      "https://smartcart-backend-ukyl.onrender.com/api/auth/change-password",
       {
         email: user.email,
         currentPassword,

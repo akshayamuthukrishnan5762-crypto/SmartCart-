@@ -11,7 +11,7 @@ function Register() {
   const handleRegister = async () => {
     try {
       const res = await axios.post(
-        "http://localhost:5000/api/auth/register",
+          "https://smartcart-backend-ukyl.onrender.com/api/auth/register",
         {
           name,
           email,

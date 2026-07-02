@@ -9,7 +9,7 @@ function MyOrders() {
   const fetchOrders = async () => {
     try {
       const res = await axios.get(
-        "http://localhost:5000/api/orders"
+        "https://smartcart-backend-ukyl.onrender.com/api/orders"
       );
 
       const userOrders = res.data.filter(

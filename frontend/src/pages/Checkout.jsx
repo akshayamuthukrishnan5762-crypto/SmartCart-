@@ -61,7 +61,7 @@ if (!token) {
 
   try {
     await axios.post(
-      "http://localhost:5000/api/orders",
+      "https://smartcart-backend-ukyl.onrender.com/api/orders",
       {
         name,
         email,

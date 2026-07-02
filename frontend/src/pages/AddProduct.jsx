@@ -12,7 +12,7 @@ function AddProduct() {
     e.preventDefault();
 
     try {
-      await axios.post("http://localhost:5000/products", {
+      await axios.post("https://smartcart-backend-ukyl.onrender.com/products", {
         id: Number(id),
         name,
         price: Number(price),

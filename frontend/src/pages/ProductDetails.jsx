@@ -12,7 +12,7 @@ const [product, setProduct] = useState(null);
 
 useEffect(() => {
   axios
-    .get(`http://localhost:5000/products/${id}`)
+    .get(`https://smartcart-backend-ukyl.onrender.com/products/${id}`)
     .then((res) => {
       setProduct(res.data);
     })

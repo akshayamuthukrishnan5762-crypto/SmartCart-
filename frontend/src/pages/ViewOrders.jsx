@@ -7,7 +7,7 @@ function ViewOrders() {
   const fetchOrders = async () => {
     try {
       const res = await axios.get(
-        "http://localhost:5000/api/orders"
+        "https://smartcart-backend-ukyl.onrender.com/api/orders"
       );
 
       setOrders(res.data);
@@ -19,7 +19,7 @@ function ViewOrders() {
   const updateStatus = async (id, status) => {
     try {
       await axios.put(
-        `http://localhost:5000/api/orders/${id}`,
+        `https://smartcart-backend-ukyl.onrender.com/api/orders/${id}`,
         {
           status,
         }

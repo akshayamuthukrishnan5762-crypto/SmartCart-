@@ -13,7 +13,7 @@ function ManageProducts() {
   const fetchProducts = async () => {
     try {
       const res = await axios.get(
-        "http://localhost:5000/products"
+        "https://smartcart-backend-ukyl.onrender.com/products"
       );
 
       setProducts(res.data);
@@ -25,7 +25,7 @@ function ManageProducts() {
   const deleteProduct = async (id) => {
     try {
       await axios.delete(
-        `http://localhost:5000/products/${id}`
+        `https://smartcart-backend-ukyl.onrender.com/products/${id}`
       );
 
       fetchProducts();
@@ -36,7 +36,7 @@ function ManageProducts() {
   const updateProduct = async (id) => {
   try {
     await axios.put(
-      `http://localhost:5000/products/${id}`,
+      `https://smartcart-backend-ukyl.onrender.com/products/${id}`,
       {
         name: editName,
         price: editPrice,

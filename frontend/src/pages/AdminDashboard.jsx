@@ -14,7 +14,7 @@ function AdminDashboard() {
     const fetchAnalytics = async () => {
       try {
         const res = await axios.get(
-          "http://localhost:5000/api/orders/analytics"
+          "https://smartcart-backend-ukyl.onrender.com/api/orders/analytics"
         );
 
         setAnalytics(res.data);
